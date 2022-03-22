@@ -13,9 +13,9 @@ getgenv().Settings = {
 
 local Settings = getgenv().Settings
 
-local SelectedPart = "HumanoidRootPart"
-local Prediction = true
-local PredictionValue = 0.146
+getgenv().SelectedPart = "HumanoidRootPart"
+getgenv().Prediction = true
+getgenv().PredictionValue = 0.146
 
 
     local AnchorCount = 0
@@ -93,9 +93,9 @@ local PredictionValue = 0.146
         else
         placemarker.Size = Vector3.new(0, 0, 0)
         end
-        placemarker.Transparency = 0.75
+        placemarker.Transparency = 0.85
         if Settings.rewrittenmain.DOT then
-        makemarker(placemarker, placemarker, Color3.fromRGB(232, 186, 200), 0.40, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(0, 255, 255), 0.40, 0)
         end
     end)
 
