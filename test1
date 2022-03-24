@@ -1,0 +1,19 @@
+--🌎farzad9999's Private
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/UniverSal-ESP/main/newtest1"))()
+
+local window = library:new({textsize = 13.5,font = Enum.Font.RobotoMono,name = "farzad9999's Private 🌎",color = Color3.fromRGB(0, 255, 255)})
+
+-- test default shit aiming
+
+local tab2 = window:page({name = "Aiming",size = 4})
+
+--dot lock
+
+local sectionxd1 = tab2:section({name = "Dot Lock",side = "left",size = 275})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/24981498124821491824921421/lock/main/3"))()
+
+local owo2 = sectionxd1:toggle({name = "Enable",def = false,callback = function(ha_DF121231)
+	getgenv().Settings.rewrittenmain.Enabled = ha_DF121231
+end})
